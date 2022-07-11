@@ -107,7 +107,7 @@ abstract class A {
         super('lili')
     }
     getName(): string {
-        return this.params                // this 访问父类中继承过来的熟悉
+        return this.params                // this 访问父类中继承过来的属性
     }
  }
 

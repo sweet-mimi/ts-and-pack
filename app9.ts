@@ -3,7 +3,7 @@
 // 元组 Tuple    其实就是数组的变种
 // 元组是固定数量的不同类型的元素的组合
 
-let arr:[string, number] = ['dangdang', 22]      // 约束已知索引的数组，这样的成为元组
+let arr:[string, number] = ['dangdang', 22]      // 约束已知索引的数组，这样的称为元组
 
 
 console.log(arr[0].length);   // string 有length 属性，可以推断出
