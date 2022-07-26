@@ -23,7 +23,7 @@ const proxy = (object:any, key:any) => {
     return new Proxy(object, {
         get(target, prop, receiver) {                     // （目标， 参数， 描述）
             console.log("======>get", prop);
-            return Reflect.set(target, prop, receiver)
+            return Reflect.get(target, prop, receiver)
         },
         set(target, prop, value, receiver) {                  // （目标， 参数， 值， 描述）
             console.log("======>set", prop);
