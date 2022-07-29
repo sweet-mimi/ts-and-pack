@@ -44,10 +44,10 @@ class C{
 let c = new C()
 console.log((<any>c).getNames());
 
-// 组合式装饰器
+// 组合式装饰器   先执行后一个，由后向前执行
 // @handler('aaa') @watcher
-@handler('aaa')
-@watcher 
+@handler('aaa')      // 类装饰器
+@watcher            // 类装饰器 
 class D{
 
 }
@@ -81,7 +81,10 @@ class P{
 let p = new P()
 
 
-
+/*
+    执行顺序：
+        属性装饰器 ---> 方法装饰器 ----> 方法参数装饰器(多个参数的话，由后向前的顺序)  ---> 类装饰器(多个的话，又后向前顺序执行)
+*/
 
 
 

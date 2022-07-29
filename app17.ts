@@ -1,5 +1,5 @@
 
-// 三斜线指令 引入文件， 跟reference 联用
+// 三斜线指令 引入文件， 跟reference 联用,  使用三斜线指令时，app17.2 里面的命名空间不需要使用 export 暴露了， 跟app16-2（import）对比， 
 ///<reference path="./app17-2.ts" />
 
 // console.log(AF.a);    // 1
